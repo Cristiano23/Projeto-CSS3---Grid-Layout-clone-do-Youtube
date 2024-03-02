@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F9F9F9;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header header header"
+    "menu-left posts posts posts posts";
+}
+
+.header {
+    padding: 16px 32px;
+    background: #fff;
+
+    grid-area: header;
+}
+
+.header nav {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.header nav, .menu-logo, .search, .user {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    gap: 16px;
+}
+
+.logo-youtube {
+    height: 24px;
+}
+
+.search-video {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.search input {
+    width: 348px;
+    padding: 16px;
+    height: 40px;
+    border: 1px solid #e6e6e6;
+}
+
+.search-icon {
+    margin-left: -32px;
+    /* background: #CCCCCC; */
+}
+
+.menu-left {
+    background: #ffffff;
+    grid-area: menu-left;
+}
+
+.list-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 24px;
+    margin-top: 24px;
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 22px;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+} 
+
+.posts {
+    background: #F9F9F9;
+    padding-top: 24px;
+    padding-left: 28px;
+    grid-area: posts;
+    /* gap: 12px; */
+}
+
+.post {
+    width: 282px;
+    height: 262px;
+}
+
+.post .img-post{
+    width: 100%;
+}
+
+.img-user {
+    width: 24px;
+    height: 24px;
+}
+
+
+/* .img-user img {
+    width: 100%;
+} */
+
+.post-align {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-text-user {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-post {
+    width: 250px;
+    height: 140px;
+}
+
+.content-text-user {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.text {
+    margin-left: 10px;
+}
+
+.title {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
